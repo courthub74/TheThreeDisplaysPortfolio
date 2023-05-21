@@ -1,0 +1,297 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@900&display=swap');
+// COLORS
+$mainblue: #080E2F;
+$skillswhite: #FFFFFF;
+$aboutgreen: #0E4946;
+$skillsteal: #146166;
+$iconblock: #023430;
+$languagewhite: #d9e2e2;
+$techcirclegreen: #05607D;
+$hoverfonts: #B7BCD6;
+
+// BOX SHADOW
+$boxshadowcircles: rgba(0, 0, 0, 0.521);
+
+// FOOTER
+$firstblue: #58a6ff;
+$secondblue: #6287cf;
+$thirdblue: rgb(85, 85, 255);
+
+
+// Mobile Version  (from 0px to 500px)
+@media screen and (max-width: 500px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+            .container {
+                // MOBILE DISPLAY TO SHOW
+                #mobile {
+                    background-color: $techcirclegreen;
+                    color: $skillswhite;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 8vw;
+                    }
+                    .squarewords {
+                        margin: 7vh 0 0 0;
+                        border: 1px solid white;
+                        height: 20vw;
+                        width: 60vw;
+                        padding: 2vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            text-align: center;
+                            font-size: 4vw;
+                        }
+                    }
+                }
+                // TABLET DISPLAY TO BE HIDDEN
+                #tabletone {
+                    display: none;
+                }
+                // SMALLER TABLET DISPLAY TO BE HIDDEN
+                #tablettwo {
+                    display: none;
+                }
+                // DESKTOP DISPLAY TO BE HIDDEN
+                #desktop {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+// Tablet Version (from 500px to 1000px)
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+            .container {
+                // MOBILE DISPLAY TO BE HIDDEN
+                #mobile {
+                    display: none;
+                }
+                // TABLET DISPLAY TO SHOW
+                #tabletone {
+                    background-color: $secondblue;
+                    color: $skillswhite;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        font-size: 6vw;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+                    .squarewords {
+                        margin: 7vh 0 0 0;
+                        border: 1px solid white;
+                        height: 20vw;
+                        width: 60vw;
+                        padding: 4vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            text-align: center;
+                            font-size: 4vw;
+                            font-family: 'Times New Roman', Times, serif;
+                        }
+                    }
+                }
+                // SMALLER TABLET DISPLAY TO BE HIDDEN
+                #tablettwo {
+                    display: none;
+                }
+                // DESKTOP DISPLAY TO BE HIDDEN
+                #desktop {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Smaller Tablets btwn 500px and 700px
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+            .container {
+                // MOBILE DISPLAY TO BE HIDDEN
+                #mobile {
+                    display: none;
+                }
+                // TABLET DISPLAY TO BE HIDDEN
+                #tabletone {
+                    display: none;
+                }
+                // SMALLER TABLET DISPLAY TO SHOW
+                #tablettwo {
+                    background-color: $boxshadowcircles;
+                    color: white;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        font-size: 5vw;
+                        font-family: monospace;
+                    }
+                    .squarewords {
+                        border: 1px solid white;
+                        margin: 7vh 0 0 0;
+                        height: 20vw;
+                        width: 60vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            text-align: center;
+                            font-size: 3vw;
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                        }
+                    }
+                }
+                // DESKTOP DISPLAY TO BE HIDDEN
+                #desktop {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Main Desktop Version (from 1000px)
+@media screen and (min-width: 1000px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+            .container {
+                // MOBILE DISPLAY TO BE HIDDEN
+                #mobile {
+                    display: none;
+                }
+                // TABLET DISPLAY TO BE HIDDEN
+                #tabletone {
+                    display: none;
+                }
+                // SMALLER TABLET DISPLAY TO BE HIDDEN
+                #tablettwo {
+                    display: none;
+                }
+                // DESKTOP DISPLAY TO SHOW
+                #desktop {
+                    background-color: $skillsteal;
+                    color: $skillswhite;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        font-size: 5vw;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    .squarewords {
+                        border: 1px solid white;
+                        margin: 7vh 0 0 0;
+                        height: 30vw;
+                        width: 60vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            font-size: 3vw;
+                        }
+                    }
+                }
+                #desktopsmall {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Smaller Desktop Version (btwn 1000px and 1100px)
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+            .container {
+                // MOBILE DISPLAY TO BE HIDDEN
+                #mobile {
+                    display: none;
+                }
+                // TABLET DISPLAY TO BE HIDDEN
+                #tabletone {
+                    display: none;
+                }
+                // SMALLER TABLET DISPLAY TO BE HIDDEN
+                #tablettwo {
+                    display: none;
+                }
+                // DESKTOP DISPLAY TO BE HIDDEN
+                #desktop {
+                    display: none;
+                }
+                // SMALLER DESKTOP DISPLAY TO BE SHOWN
+                #desktopsmall {
+                    background-color: rgb(102, 11, 11);
+                    color: white;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        font-size: 4vw;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+                    .squarewords {
+                        border: 1px solid white;
+                        margin: 7vh 0 0 0;
+                        height: 20vw;
+                        width: 60vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            text-align: center;
+                            font-size: 2vw;
+                            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

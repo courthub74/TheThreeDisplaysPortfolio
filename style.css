@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@900&display=swap");
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body .container #mobile {
+    background-color: #05607D;
+    color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #mobile h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 8vw;
+  }
+  * body .container #mobile .squarewords {
+    margin: 7vh 0 0 0;
+    border: 1px solid white;
+    height: 20vw;
+    width: 60vw;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #mobile .squarewords p {
+    text-align: center;
+    font-size: 4vw;
+  }
+  * body .container #tabletone {
+    display: none;
+  }
+  * body .container #tablettwo {
+    display: none;
+  }
+  * body .container #desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body .container #mobile {
+    display: none;
+  }
+  * body .container #tabletone {
+    background-color: #6287cf;
+    color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #tabletone h1 {
+    font-size: 6vw;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  * body .container #tabletone .squarewords {
+    margin: 7vh 0 0 0;
+    border: 1px solid white;
+    height: 20vw;
+    width: 60vw;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #tabletone .squarewords p {
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Times New Roman", Times, serif;
+  }
+  * body .container #tablettwo {
+    display: none;
+  }
+  * body .container #desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body .container #mobile {
+    display: none;
+  }
+  * body .container #tabletone {
+    display: none;
+  }
+  * body .container #tablettwo {
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #tablettwo h1 {
+    font-size: 5vw;
+    font-family: monospace;
+  }
+  * body .container #tablettwo .squarewords {
+    border: 1px solid white;
+    margin: 7vh 0 0 0;
+    height: 20vw;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #tablettwo .squarewords p {
+    text-align: center;
+    font-size: 3vw;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  * body .container #desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body .container #mobile {
+    display: none;
+  }
+  * body .container #tabletone {
+    display: none;
+  }
+  * body .container #tablettwo {
+    display: none;
+  }
+  * body .container #desktop {
+    background-color: #146166;
+    color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #desktop h1 {
+    font-size: 5vw;
+    font-family: "Times New Roman", Times, serif;
+  }
+  * body .container #desktop .squarewords {
+    border: 1px solid white;
+    margin: 7vh 0 0 0;
+    height: 30vw;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #desktop .squarewords p {
+    font-size: 3vw;
+  }
+  * body .container #desktopsmall {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body .container #mobile {
+    display: none;
+  }
+  * body .container #tabletone {
+    display: none;
+  }
+  * body .container #tablettwo {
+    display: none;
+  }
+  * body .container #desktop {
+    display: none;
+  }
+  * body .container #desktopsmall {
+    background-color: rgb(102, 11, 11);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #desktopsmall h1 {
+    font-size: 4vw;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  }
+  * body .container #desktopsmall .squarewords {
+    border: 1px solid white;
+    margin: 7vh 0 0 0;
+    height: 20vw;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #desktopsmall .squarewords p {
+    text-align: center;
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+}/*# sourceMappingURL=style.css.map */
